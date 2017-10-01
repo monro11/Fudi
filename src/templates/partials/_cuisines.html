@@ -1,0 +1,10 @@
+{% import "data/cusines-data.html" as data %}
+<div class="cuisines">
+	<h2 class="cuisines__titel">BROWSE BY CUSINES</h2>
+	{% for item in data.cusines %}
+	<div class="cusines__grid" style="background-image: url({{item.img}})">
+		<h4 class="cusines__recipes">{{item.recipes}}</h4>
+		<h3 class="cusines__country">{{item.country}}</h3>
+	</div>
+	{% endfor %}
+</div>

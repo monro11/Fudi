@@ -1,3 +1,10 @@
+{% import "data/review-data.html" as data %}
 <div class="review">
-	
+	{% for item in data.review %}
+	<div class="review__content">
+		<img src="{{item.img}}" alt="" class="review_img">
+		<h3 class="review__comment">{{item.comment}}</h3>
+		<h4 class="review__name">{{item.from}}</h4>
+	</div>
+	{% endfor %}
 </div>
