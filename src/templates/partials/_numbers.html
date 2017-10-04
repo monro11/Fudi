@@ -1,9 +1,11 @@
 {% import "data/numbers-data.html" as data %}
 <div class="numbers">
-	{% for item in data.number %}
-	<div class="numbers_content">
-		<h3 class="numbers_num">{{item.num}}</h3>
-		<h4 class="numbers_category">{{item.category}}</h4>
-	</div>
-	{% endfor %}
+  <div class="layout">
+    {% for item in data.number %}
+    <div class="numbers__content">
+      <h3 class="numbers__num">{{item.num}}</h3>
+      <h4 class="numbers__category">{{item.category}}</h4>
+    </div>
+    {% endfor %}
+  </div>
 </div>

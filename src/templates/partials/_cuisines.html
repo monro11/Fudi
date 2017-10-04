@@ -4,8 +4,10 @@
 	<div class="cuisines__grid">
 	{% for item in data.cusines %}
 	<div class="cuisines__griditem" style="background-image: url({{item.img}})">
+		<div class="cuisines__center">
 		<h4 class="cuisines__recipes">{{item.recipes}}</h4>
 		<h3 class="cuisines__country">{{item.country}}</h3>
+		</div>
 	</div>
 	{% endfor %}
 	</div>
