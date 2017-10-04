@@ -126,16 +126,15 @@
 		flex-wrap: nowrap
 		justify-content: center
 	&__iphone
-		width: 100%
+		width: 40%
+		max-width: 425px
 		height: auto
 		img
 			width: 100%
-			min-width: 300px
 	&__content
-		margin-left: 100px
-		min-width: 430px
+		width: 60%
+		padding-left: 100px
 		padding-top: 50px
-		max-width: 700px
 	&__title
 		+lato-bold
 		font-size: 18px
@@ -163,12 +162,40 @@
 		margin-bottom: 20px
 	&__comment
 		font-size: 30px
-		font-weight: 500
+		font-weight: normal
 		color: #FFF
 		margin: 20px auto
 	&__name
 		font-size: 16px
-		font-weight: 500
+		font-weight: normal
+		color: #FFF
+.cuisines
+	&__title
+		+lato-bold
+		text-align: center
+		font-size: 18px
+		margin-top: 20px
+		margin-bottom: 20px
+		&:after
+			display: block
+			content: ''
+			border-bottom: 1px solid #f57365
+			width: 88px
+			margin: 10px auto 0	
+	&__grid
+	&__griditem
+		width: 20%
+		float: left
+		height: 225px
+		text-align: center
+	&__recipes
+		font-family: 'Times New Roman', serif
+		font-size: 16px
+		font-style: italic
+		color: #FFF
+	&__country
+		+lato-bold
+		font-size: 36px
 		color: #FFF
 	
 			

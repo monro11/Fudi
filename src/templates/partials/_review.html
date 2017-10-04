@@ -1,5 +1,6 @@
 {% import "data/review-data.html" as data %}
 <div class="review" style="background-image: url('img/review-bg.jpg')">
+	<div class="layout">
 	{% for item in data.review %}
 	<div class="review__content" >
 		<img src="{{item.img}}" alt="" class="review_img">
@@ -7,4 +8,5 @@
 		<h4 class="review__name">{{item.from}}</h4>
 	</div>
 	{% endfor %}
+	</div>
 </div>
